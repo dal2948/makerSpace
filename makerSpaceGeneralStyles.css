@@ -1,0 +1,212 @@
+html{
+	font:12px;	
+}
+
+body{
+	overflow-x:hidden;
+	width:100%;
+	font-family:Helvetica;
+}
+
+/*Header Section*/
+
+header{
+	background-color:blue;
+}
+
+header .adjust{
+	height:15rem;
+}
+
+ #placeLogo{
+	width:15rem;
+	height:10rem;
+}
+#placeLogo > img{
+	width:100%;
+	height:100%;
+}
+
+ nav > ul{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding:.5rem .5rem;
+
+}
+nav ul li{
+	padding-right:.5rem;
+	
+}
+nav ul li >a {
+text-decoration:none;
+color:white;	
+}
+nav ul li >a:hover{
+text-decoration:underline;
+color:white;
+}
+
+/*Main Section*/
+/*Makerspace Home Page Styles*/
+main{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+}
+
+.content{
+	width:100%;
+	height:30rem;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	margin-bottom:2rem;
+}
+.content .text{
+	width:30%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+.text > h1{
+	font-size:1.2rem;
+	padding-bottom:2rem;
+}
+
+
+.content .photo{
+	height:20rem;
+	width:20rem;
+	margin-top:5rem;
+	
+}
+.photo > img{
+	width:100%;
+	height:100%;
+}
+#lastContent{
+    margin-bottom:2rem;	
+}
+#bottomText{
+	display:flex;
+    justify-content:center;
+}
+
+#bottomText h1 >a{
+	text-decoration:none;
+	color:black;
+}
+#bottomText h1 > a:hover{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#tccVideo {
+	width:100%;
+}
+
+#tccVideo iframe{
+	max-width:100%;
+}
+
+/*Makerspace Events Page*/
+main#events{
+
+}
+.container{
+	width:100%;
+}
+.repositionTitle{
+	display:flex;
+	justify-content:center;
+	padding:1rem 1rem;
+}
+.repositionTitle h1{
+	font-size:1.08rem;
+	text-decoration:underline;
+}
+.table-responsive{
+	width:100%;
+}
+table{
+	width:100%;
+}
+thead tr th{
+	text-align:center;
+	font-weight:bold;
+}
+ tbody tr >td{
+	 text-align:center;
+ }
+
+/*Footer Section*/
+#footer{
+background-color:blue;
+color:white;
+padding-bottom:1.5rem;	
+}
+
+
+.category{
+	display:flex;
+	justify-content:center;
+	padding:1.5rem 1.5rem;
+}
+.category >h1{
+	font-size:1.08rem;
+	text-decoration:underline;
+}
+
+.clubInfo > ul{
+	display:flex;
+	justify-content:space-around;
+}
+
+#socialMediaLogo{
+	display:flex;
+	justify-content:flex-end;
+	padding-top:.5rem;
+	padding-right:1.5rem;
+}
+#socialMediaLogo a{
+	color:white;
+}
+
+/*Media Queries*/
+@media screen and (max-width:480px){
+	.content{
+		display:flex;
+		flex-direction:column-reverse;
+		height:50rem;
+	}
+	.content > .text{
+		width:100%;
+	}
+	.content > .photo{
+		width:100%;
+	}
+	
+	.clubInfo ul{
+		display:flex;
+		flex-direction:column;	
+		align-items:center;
+	}	
+}
+
+@media screen and (max-width:768px){
+		
+	.clubInfo ul{
+		display:flex;
+		flex-direction:column;	
+		align-items:center;
+	}	
+	
+}
+
+
+
