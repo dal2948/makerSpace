@@ -12,7 +12,10 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	  <meta name="keywords" content="TCC,Makerspace,Hackerspace,computers,creativity"/>
 	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-	   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
 	  <link href="makerSpaceReset.css" type="text/css" rel="stylesheet"/>
 	  <link href="makerSpaceGeneralStyles.css" type="text/css" rel="stylesheet"/>
 	</head>
@@ -21,7 +24,7 @@
 	  <header>
 	    <div class="adjust">
 		  <div id="placeLogo">
-             <img src="makerSpaceLogo1.png" alt="Makerspace Logo"/>
+             <img src="tccWhiteLogo.png" alt="Tidewater Community College Logo"/>
 		  </div>
         </div>		  
 	    <nav>
@@ -29,13 +32,59 @@
 		    <li><a href="makerSpaceHome.html">Home</a></li>
 			<li><a href="makerSpaceEquipment.html">Equipment</a></li>
 			<li><a href="makerSpaceEvents.html">Events</a></li>
-			<li><a href="makerSpaceUpdates.html">Updates</a></li>
 			<li><a href="makerSpaceProjects.html">Projects</a></li>
-			<li><a href="makerSpaceUserAgreement.html">User Info.</a></li>
+			<li><a href="makerSpaceClub.html">Club</a></li>
+			<li><a href="makerSpaceContacts.html">Contacts</a></li>
 		  </ul>
 		</nav>
 	  </header>
-	  <main></main>
+	  <main id="projects">
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="puzzlePiece.jpg" alt="puzzle piece">
+      <div class="carousel-caption">
+        <h3>Student Projects</h3>
+        <p>A puzzle piece made from a laser etching tool.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="roboticHand.jpg" alt="robotic hand">
+      <div class="carousel-caption">
+        <h3>Student Projects</h3>
+        <p>A robotic hand made in the makerspace lab.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="rocket.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>Student Projects</h3>
+        <p>A rocket made in the makerspace lab.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	  </main>
 	  <footer>
 	     <div id="footer">
 		  <div class="clubInfo">
@@ -44,7 +93,7 @@
 		    </div>
 			<ul>
 			  <li>Building: 2nd floor of ATC</li>
-			  <li>Office: H-237</li>
+			  <li>Office: H-206</li>
 			  <li>Campus:Virginia Beach</li>
 			</ul>
 		  </div>

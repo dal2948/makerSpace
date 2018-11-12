@@ -11,36 +11,42 @@ body{
 /*Header Section*/
 
 header{
-	background-color:blue;
+	background-color:#003A5C;
+	width:100%;
 }
 
 header .adjust{
 	height:15rem;
+	width:100%;
 }
 
  #placeLogo{
-	width:15rem;
-	height:10rem;
+	width:10rem;
+	height:8rem;
 }
 #placeLogo > img{
 	width:100%;
 	height:100%;
 }
+nav{
+	width:100%;
+	padding-bottom:.5rem;
+}
 
  nav > ul{
+	width:100%;
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
-	padding:.5rem .5rem;
-
 }
 nav ul li{
-	padding-right:.5rem;
+	
 	
 }
 nav ul li >a {
 text-decoration:none;
-color:white;	
+color:white;
+font-size:1.25rem;	
 }
 nav ul li >a:hover{
 text-decoration:underline;
@@ -160,41 +166,17 @@ main#events{
 }
 .repositionTitle{
 	display:flex;
+	flex-direction:column;
 	justify-content:center;
+	align-items:center;
 	padding:1rem 1rem;
 }
 .repositionTitle h1{
 	font-size:1.08rem;
 	text-decoration:underline;
 }
-.table-responsive{
-	width:100%;
-}
-table{
-	width:100%;
-}
-thead tr th{
-	text-align:center;
-	font-weight:bold;
-}
- tbody tr >td{
-	 text-align:center;
- }
- /*Makerspace Updates Page*/
- main#updates{
-	 
- }
- .container{
-	width:100%;
-}
-.repositionTitle{
-	display:flex;
-	justify-content:center;
-	padding:1rem 1rem;
-}
-.repositionTitle h1{
-	font-size:1.08rem;
-	text-decoration:underline;
+.repositionTitle h2{
+	color:red;
 }
 .table-responsive{
 	width:100%;
@@ -212,10 +194,119 @@ thead tr th{
  tr td >span.updates{
 	 color:red;
  }
+ /*Unordered list for Events Page*/
+ .mobileEvents{
+	 border:1px solid black;
+	 display:flex;
+	 justify-content:space-around;
+ }
+ .divideEvents{
+	 border:1px solid black;
+	 width:35%;	
+ }
+ .divideEvents ul li >span.darkDate{
+	font-weight:bold;
+ }
+ .updates{
+	 color:red;
+ }
+ 
+ /*Projects Page*/
+ main#projects{
+	 width:100%;  
+ }
+ div#myCarousel{
+	margin:3rem 3rem;
+ }
+ 
+ .item > img{
+	 width:100%;
+	 height:100%;
+ }
+ /*Club Page */
+#club{
+	
+}
+.clubTitle{
+	font-size:1.5rem;
+	padding-top:1rem;
+	margin-bottom:0.5rem;
+}
+.clubBox{
+	width:100%;
+	display:flex;
+	margin-bottom:0.5rem;
+}
+.clubDivide{
+	width:50%;
+	display:flex;
+	justify-content:center;
+}
+.clubDivide>.clubText{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+     	
+}
+.clubDivide .clubText >.activityTitle{
+	display:flex;
+	justify-content:center;
+	font-size:1.25rem;
+	margin-bottom:0.5rem;
+}
+.activityTitle h1{
+	
+}
+.clubDivide > .clubPic{
+	
+}
+.clubDivide .clubPic >img{
+	width:100%;
+	height:100%;
+}
+/*Contacts Page*/
+#contacts{
+	
+}
+.contactsBox{
+	width:100%;
+	display:flex;
+	margin:0.5rem 0.5rem;
+}
+.contactsDivide{
+	width:50%;
+	display:flex;
+	justify-content:center;
+}
+.contactsText{
+	width:55%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.contactsTitle{
+	display:flex;
+	justify-content:center;
+	font-size:1.25rem;
+	margin-bottom:0.5rem;
+}
+.contactsTitle >h1{
+	
+}
+.underlineContacts{
+	text-decoration:underline;
+}
+.contactsPic{
+	
+} 
+.contactsPic >img{
+	width:100%;
+	height:100%;
+}
 
 /*Footer Section*/
 #footer{
-background-color:blue;
+background-color:#003A5C;
 color:white;
 padding-bottom:1.5rem;	
 }
@@ -273,6 +364,54 @@ padding-bottom:1.5rem;
 	.boxImage{
 		width:100%;
 	}
+	/*Events Page*/
+	.table-responsive{
+		display:none;
+	}
+	.mobileEvents{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	.divideEvents{
+		width:100%;	
+	}
+
+	/*Club Page*/
+	.clubBox{
+		display:flex;
+		flex-direction:column-reverse;
+		align-items:center;
+	}
+	.clubDivide{
+		width:100%;
+	}
+	.clubText{
+		width:100%;
+	}
+	.clubPic{
+	  width:100%;
+	}
+	/*Contacts Page*/
+	.contactsBox{
+		display:flex;
+		flex-direction:column-reverse;
+		align-items:center;
+	}
+	.contactsDivide{
+		width:100%;
+	}
+	.contactsText{
+		width:100%;
+	}
+	.contactsPic{
+		width:100%;
+	}
+	/*Affects all pages in the header section for smartphones*/
+	nav ul li >a {
+     font-size:1.18rem;	
+    }
+	
 	/*Affects all pages in the footer section for smartphones*/
 	.clubInfo ul{
 		display:flex;
@@ -286,6 +425,24 @@ padding-bottom:1.5rem;
 	.boxContent{
 		padding-right:0.5rem;
 	}
+	/*Events Page*/
+	.table-responsive{
+		display:none;
+	}
+	
+	.divideEvents{
+		width:100%;
+		
+	}
+	/*Club Page*/
+	.clubText{
+		width:100%;
+	}
+	/*Contacts Page*/
+	.contactsText{
+		width:100%;
+	}
+	
 	/*Affects all pages in the footer section for tablets*/	
 	.clubInfo ul{
 		display:flex;
@@ -298,6 +455,25 @@ padding-bottom:1.5rem;
 	/*Equipment page for desktops*/
 	.boxContent{
 		margin-left:0.5rem;
+	}
+	/*Events Page and Updates Page*/
+	.mobileEvents{
+		display:none;
+	}
+	/*Projects Page*/
+	.carousel-inner{
+		width:40rem;
+		height:30rem;
+	}
+	/*Club Page*/
+	.clubPic{
+	width:20rem;
+	height:20rem;
+	}
+	/*Contacts Page*/
+	.contactsPic{
+		width:20rem;
+		height:20rem;
 	}
 }
 
